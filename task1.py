@@ -1,12 +1,12 @@
 class Zoo:
     def __init__(self, visitors_per_year=0, name="", number_of_animals=0):
-        self.__visitors_per_year = visitors_per_year  # приватне поле
-        self.__name = name                             # приватне поле
-        self.__number_of_animals = number_of_animals   # приватне поле
+        self.__visitors_per_year = visitors_per_year 
+        self.__name = name                             
+        self.__number_of_animals = number_of_animals   
         
         # Публічні поля
-        self.public_integer = 0  # числове поле
-        self.public_string = ""   # стрічкове поле
+        self.public_integer = 0  
+        self.public_string = ""   
 
     def get_visitors_per_year(self):
         return self.__visitors_per_year
@@ -36,12 +36,12 @@ class Zoo:
         print(f"Zoo {self.__name} is being deleted.")
 
 def main():
-    # Ініціалізація трьох об'єктів класу Zoo
+   
     zoo1 = Zoo(50000, "City Zoo", 150)
     zoo2 = Zoo(30000, "Wildlife Park", 80)
     zoo3 = Zoo(60000, "Safari Zoo", 200)
 
-    # Виведення значень всіх полів
+    
     for zoo in (zoo1, zoo2, zoo3):
         print(zoo)
 
